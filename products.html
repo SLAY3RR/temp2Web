@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirty Soles | Products</title>
+    <link rel="shortcut icon" type="x-icon" href="images/Logo-2.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="login.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div> 
+       </div>
+<!----------------- title -------------->
+<div class="small-container">
+   <div class="row row-2">
+       <h2>All Products</h2>
+       <select>
+           <option>Default Shorting</option>
+           <option>Short by price</option>
+           <option>Short by popularity</option>
+           <option>Short by rating</option>
+           <option>Short by sale</option>
+       </select>
+   </div>
+           <div class="row">
+               <div class="col-4">
+                   
+                   <a href="product-details.html"><img src="images/Product-1.png"></a>
+                   <h4><a href="product-details.html">2021
+                    Air Jordan 1 Retro High OG 'University Blue'</a></h4>
+                   <p>$459.99</p>
+               </div> 
+               <div class="col-4">
+                <a href="product-details2.html"><img src="images/product2.webp"></a>
+                   <h4>2022
+                    Air Jordan 4 Retro PS 'Military Black'</h4>
+                   <p>$235.99</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images2/product3.webp">
+                   <h4>2022
+                    Wmns Air Jordan 1 Mid SE 'Berry Pink'h4>
+                  
+                   <p>$153.99</p>
+               </div> 
+                <div class="col-4">
+                   <img src="images2/product4.webp">
+                   <h4>2021
+                    Air Jordan 1 Retro High OG 'Patent Bred'</h4>
+                
+                   <p>$216.99</p>
+               </div> 
+           </div>
+            
+             <div class="row">
+               <div class="col-4">
+                   <img src="images2/product5.webp">
+                   <h4>2022
+                    Cinnamon Toast Crunch x Classic All-Terrain</h4>
+                
+                   <p>$200.99</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images2/product6.webp">
+                   <h4>2022
+                    Yeezy Foam Runner 'Onyx'</h4>
+                 
+                   <p>$170.99</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images2/product7.webp">
+                   <h4>2022
+                    Yeezy Slides 'Bone' 2022 Tan</h4>
+                 
+                   <p>$160.99</p> 
+               </div> 
+                <div class="col-4">
+                   <img src="images2/product8.webp">
+                   <h4>2021
+                    Cars x Classic Clog 'Lightning McQueen'</h4>
+                
+                   <p>$270.99</p>
+               </div> 
+           </div>
+           
+           <div class="row">
+               <div class="col-4">
+                   <img src="images2/product9.webp">
+                   <h4>2022
+                    Air Jordan 3 Retro 'Fire Red' 2022</h4>
+           
+                   <p>$262.99</p> 
+               </div> 
+               <div class="col-4">
+                   <img src="images2/product10.webp">
+                   <h4>2022
+                    Paris Saint-Germain x Air Jordan 5 Retro Low</h4>
+           
+                   <p>$206.99</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images2/product11.webp">
+                   <h4>2022
+                    Air Jordan 1 Low SE Craft 'Inside Out'</h4>
+              
+                   <p>$146.99</p>
+               </div> 
+                <div class="col-4">
+                    <a href="product-details3.html"><img src="images/product3.png"></a>
+                   <h4>2022 Dunk Low 'Reverse Panda'</h4>
+          
+                   <p>$170.99</p>
+               </div> 
+           </div>
+
+           <div class="page-btn">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>&#8594;</span>
+          </div>
+</div>
+    
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+            </div>
+            <div class="footer-col2">
+               <img src="">
+            </div>
+        </div>
+        <hr>
+        <p class="copyright"><a href="">Copyright 2022 - Dirty Soles</a></p>
+    </div>
+    
+</div>
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+</body>
+</html>

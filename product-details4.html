@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirty Soles | Air Jordan</title>
+    <link rel="shortcut icon" type="x-icon" href="images/Logo-2.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/Logo-2.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="login.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!--------------single-product--------------->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/product4.webp" width="100%" id="ProductImg">
+            <div class="small-img-row">
+               <div class="small-img-col">
+                   <img src="images/product4-1.webp" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/product4-2.webp" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/product4-3.webp" class="small-img" width="100%">
+               </div>
+               <div class="small-img-col">
+                   <img src="images/product4-4.webp" class="small-img" width="100%">
+               </div>
+    
+            </div>
+            
+        </div>
+        <div class="col-2">
+            <p>Home / Air Jordan</p>
+            <h1>2022 Air Jordan 1 Mid GS 'Pinksicle Orange'</h1>
+            <h4>$129.99</h4>
+            
+            <select>
+               <option>Select Size</option>
+               <option>7</option>
+               <option>9</option>
+               <option>8.5</option>
+               <option>9</option>
+               <option>9.5</option>
+               <option>10</option>
+               <option>10.5</option>
+               <option>11</option>
+               <option>11.5</option>
+               <option>12</option>
+               <option>12.5</option>
+               <option>13</option>
+               <option>14</option>
+           </select>
+            
+            <input type="number" value="1">
+            <a href="cart.html" class="btn">Add To Cart</a>
+            
+            <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Pinksicle/Safety Orange/White</p>
+        </div>
+    </div>
+</div>
+<!----------------- title -------------->
+<div class="small-container">
+   <div class="row row-2">
+       <h2>Related Products</h2>
+       <p>View More</p>
+   </div>
+    
+</div>
+    
+<!-------------- Our Products -------------->
+<div class="small-container">
+         
+             <div class="row">
+               <div class="col-4">
+                   <img src="images/product12.webp">
+                   <h4>2022
+                    Air Jordan 1 High Retro OG 'Brotherhood'</h4>
+                
+                   <p>$147.99</p> 
+               </div> 
+               <div class="col-4">
+                   <img src="images/product3.png">
+                   <h4>2021
+                    Air Jordan 4 Retro PS 'White Oreo'</h4>
+                 
+                   <p>$399.99</p>
+               </div> 
+               <div class="col-4">
+                   <img src="images/product2.webp">
+                   <h4>2020
+                    Air Jordan 4 Retro 'Black Cat' 2020</h4>
+                   <p>$905.99
+                   </p>
+               </div> 
+                <div class="col-4">
+                   <img src="images/product4.webp">
+                   <h4>2022
+                    Air Jordan 1 Mid GS 'Pinksicle Orange'</h4>
+                   <p>$129.99</p>
+               </div> 
+           </div>
+           
+       </div>
+  
+     
+   
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+
+            </div>
+            <div class="footer-col2">
+               <img src=></div>
+
+        </div>
+        <hr>
+        <p class="copyright"><a href=>Copyright 2022 - Dirty Soles</a></p>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+//-------------Produc Gallery------------
+    
+    var ProductImg = document.getElementById("ProductImg");
+    
+    var SmallImg = document.getElementsByClassName("small-img");
+       
+ 
+        SmallImg[0].onclick = function()
+        {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function()
+        {
+            ProductImg.src = SmallImg[1].src;
+        
+        }
+        SmallImg[2].onclick = function()
+        {
+            ProductImg.src = SmallImg[2].src;
+        
+        }
+        SmallImg[3].onclick = function()
+        {
+            ProductImg.src = SmallImg[3].src;
+        
+        }
+
+  //-------------End Produc Gallery------------  
+    
+    
+    
+    
+</script>
+
+
+
+</body>
+</html>
